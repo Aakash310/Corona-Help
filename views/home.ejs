@@ -1,0 +1,271 @@
+<!DOCTYPE>
+<html>
+<head>
+	<!--meta required-->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--linking the CSS -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<title>Covid-19 Updates</title>
+</head>
+<body>
+
+<div class="navbar-container">
+		
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNavbar">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <h1 style="padding-top: 10px;color: white;">निरोग</h1>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                <a href="/" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#updates" class="nav-link">Updates</a>
+            </li>
+            <li class="nav-item">
+                <a href="/state-wise" class="nav-link">Statewise</a>
+            </li>
+            <li class="nav-item">
+                <a href="#awareness" class="nav-link">Awareness</a>
+            </li>
+            </ul>
+    </div>
+</nav>
+</div>
+<div class="space-filler">
+</div>
+<div class="header-file" id="data">
+	<div class="container">
+		<div class="row">
+			<div class="site-meta">
+				<strong>Helpline Number :</strong>+91-11-23978046
+			</div>
+			<div class="site-meta">
+				<strong>Toll Free :</strong> 1075
+			</div>
+			<div class="site-meta">
+				<strong>Helpline Email ID :</strong> <a style="color: #86592D ;"href="mailto:ncov2019@gov.in">ncov2019@gov.in </a>
+			</div>
+			<div class="site-meta">
+				<strong> <a style="color: #86592D ;"href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">States &amp; Union Territories (View pdf)</a>
+				</strong>
+		    </div>
+		    <div class="site-meta">
+				<strong>Arogya Setu 
+					<img src="https://www.mohfw.gov.in/pdf/arogya.png"> App  
+					<a href="http://bit.ly/AarogyaSetu_PS" target="_BLANK" title="For Android"><img src="https://www.mohfw.gov.in/pdf/android.png"></a>
+				</strong> 
+				<a href="https://apple.co/2X1KMzO" target="_BLANK" title="For iPhone"><img src="https://www.mohfw.gov.in/pdf/apple.png"></a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="main-content" >
+	<div class="container">
+		<div class="row">
+			<div class="square1" id="bg-blue">
+				<img src="https://www.mohfw.gov.in/assets/images/icon-infected.png" alt="Active Cases">
+				<br>
+				<strong class="strong"><%= active_cases %></strong>
+				<br>
+				<span class="span">Active Cases</span>
+			</div>
+			<div class="square1" id="bg-green">
+				<img src="https://www.mohfw.gov.in/assets/images/icon-inactive.png" alt="Active Cases">
+				<br>
+				<strong class="strong"><%= total_recovered %></strong>
+				<br>
+				<span class="span">Cured/Discharged</span>
+			</div>
+			<div class="square1" id="bg-red">
+				<img src="https://www.mohfw.gov.in/assets/images/icon-inactive.png" alt="Active Cases">
+				<br>
+				<strong class="strong"><%= deaths %></strong>
+				<br>
+				<span class="span">Deaths</span>
+			</div>
+			<div class="square1" id="bg-orange">
+				<img src="https://www.mohfw.gov.in/assets/images/icon-inactive.png" alt="Active Cases">
+				<br>
+				<strong class="strong">1</strong>
+				<br>
+				<span class="span">Migrated</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="middle-string" id="updates">
+	<h3 class="h3" style="z-index: 1;">STAY HOME , STAY SAFE</h3>
+</div>
+<div>
+	<br>
+	<br>
+</div>
+<div class="latest-update" >
+	<div class="container">
+		<h2 style="padding-top: 20px;"><strong>Latest Updates</strong></h2>
+		<div class="row">
+            <div class="rectangle">
+            	<p>
+                   <strong>15.04.2020</strong>
+                    <a href="https://youtu.be/buyKfZD8J6M" target="_BLANK"> Advisory for personal use of N95 masks issued to all healthcare workers by AIIMS, New Delhi Hindi 
+                    <img alt="New" border="0" src="https://www.mohfw.gov.in/pdf/new.gif">
+                    </a> 
+                 </p>
+            </div> 
+            <div class="rectangle">
+            	<p>
+            		<strong>15.04.2020</strong>
+            		<a href="https://youtu.be/b4vF_B9FFxk" target="_BLANK"> Advisory for personal use of N95 masks issued to all healthcare workers by AIIMS, New Delhi English 
+            		<img alt="New" border="0" src="https://www.mohfw.gov.in/pdf/new.gif">
+                    </a> 
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>15.04.2020</strong>
+            		<a href="https://youtu.be/qkdB_2htNe0" target="_BLANK"> Audio Visual on How to Safely Quit Tobacco During Lockdown (Hindi) 
+            		<img alt="New" border="0" src="https://www.mohfw.gov.in/pdf/new.gif">
+                    </a>
+                </p>
+            </div>
+		</div>	
+		<div class="row">
+			<div class="rectangle">
+                <p>
+            	   <strong>14.4.2020</strong>
+            	   <a href="https://www.mohfw.gov.in/pdf/letterregguidanceonpoolingsamplesfortesting001.pdf" target="_blank">"Advisory on feasiblity of using pooled samples for molecular testing of COVID-19 by ICMR
+                    </a>
+            	</p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>14.04.2020</strong> 
+            		<a href="https://www.mohfw.gov.in/pdf/advisorydrinkingwaterpdf.pdf" target="_BLANK"> Advisory  for  effective management &amp; ensuring  safe  drinking  water  during  lock  down  due to COVID-19 
+                    </a>
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>14.04.2020</strong>
+            		<a href="https://www.mohfw.gov.in/pdf/EssentialservicesduringCOVID19updated0411201.pdf" target="_BLANK"> Guidance note for enabling Delivery of Essential Health Services during the COVID 19 Outbreak 
+			        </a>
+			    </p>
+            </div>
+		</div>	
+		<div class="row">
+			<div class="rectangle">
+                <p>
+                	<strong>14.04.2020</strong>
+                	</a>
+                	<a href="https://www.mohfw.gov.in/pdf/advisorydrinkingwaterpdf.pdf" target="_BLANK"> Advisory  for  effective management &amp; ensuring  safe  drinking  water  during  lock  down  due to COVID-19 
+                    </a>
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>13.04.2020</strong>
+            		<a href="https://youtu.be/3uvcqsLKnw0" target="_BLANK"> Video on Yoga for Stress Management (Hindi) 
+                    </a>
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>13.04.2020</strong>
+            		<a href="https://www.mohfw.gov.in/pdf/iGOTCovid19Circular(2).pdf" target="_BLANK"> iGOT (Integrated Govt. Online Training) courses on DIKSHA platform on COVID-19 pandemic 
+                    </a> 
+                </p>
+            </div>
+		</div>	
+		<div class="row">
+			<div class="rectangle">
+                <p>
+                	<strong>14.04.2020</strong>
+                	</a>
+                	<a href="https://www.mohfw.gov.in/pdf/advisorydrinkingwaterpdf.pdf" target="_BLANK"> Advisory  for  effective management &amp; ensuring  safe  drinking  water  during  lock  down  due to COVID-19 
+                    </a>
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>13.04.2020</strong>
+            		<a href="https://youtu.be/3uvcqsLKnw0" target="_BLANK"> Video on Yoga for Stress Management (Hindi) 
+                    </a>
+                </p>
+            </div>
+            <div class="rectangle">
+            	<p>
+            		<strong>13.04.2020</strong>
+            		<a href="https://www.mohfw.gov.in/pdf/iGOTCovid19Circular(2).pdf" target="_BLANK"> iGOT (Integrated Govt. Online Training) courses on DIKSHA platform on COVID-19 pandemic 
+                    </a> 
+                </p>
+            </div>
+            <hr>
+		</div>		
+	</div>
+</div>	
+<hr style="background-color: #CFF5F2;" id="awareness">
+<div class="awareness">
+	<div class="container">
+		<h2><strong>Awareness</strong></h2>
+		<div class="row">
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/socialdistancingEnglish.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/socialdistancingEnglish_page-0001.png" alt="Poster on social distancing in a market place during COVID-19">
+				</a>
+			</div>
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/FINAL_14_03_2020_ENg.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/FINAL_14_03_2020_ENg_page-0001.png" alt="when to get tested for COVID-19">
+				</a>
+			</div>
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/ProtectivemeasuresEng.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/ProtectivemeasuresEng_page-0001.png" alt="poster for safety measures during COVID-19">
+				</a>
+			</div>	
+			</div>
+			<div class="row">
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/PostrerEnglishtraveller.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/PostrerEnglishtraveller_page-0001.png" alt="poster for Indians travelling from abroad">
+				</a>
+			</div>
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/Mask-Eng.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/Mask-Eng_page-0001.png" alt="when to wear mask">
+				</a>
+			</div>
+			<div class="poster">
+				<a href="https://www.mohfw.gov.in/pdf/Poster_Corona_ad_Eng.pdf" target="_blank">
+					<img src="https://www.mohfw.gov.in/assets/images/Poster_Corona_ad_Eng_page-0001.png" alt="Do's and Dont's poster">
+				</a>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="content">
+			<STRONG>Disclaimer</STRONG>
+			<br>
+			<p>This website is managed and created by <a href="#">Aakash Agarwal</a> for public betterment.</p>
+		</div>
+	</div>
+</div>	
+<script type="text/javascript" src="Corona1.js"></script>
+
+</body>
+</html>
