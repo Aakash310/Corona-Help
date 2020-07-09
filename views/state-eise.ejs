@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta required-->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--linking the CSS -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/state-wise.css">
+	<title>Covid-19 Updates</title>
+</head>
+<body>
+<div class="navbar-container">		
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNavbar">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <h1 style="padding-top: 10px;color: white;">निरोग</h1>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+			</li>
+            <li class="nav-item">
+                <a href="#updates" class="nav-link">Updates</a>
+            </li>
+            <li class="nav-item">
+                <a href="#state" class="nav-link active">Statewise</a>
+            </li>
+            <li class="nav-item">
+                <a href="#awareness" class="nav-link">Awareness</a>
+            </li>
+            </ul>
+    </div>
+</nav>
+</div>
+<div class="state-data">
+	<div class="container">
+		<div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<h2>
+				<a id="showform" href="#">Covid Statewise Status( Click To Expand )</a>
+			</h2>
+			<div class="data-table table-responsive" id="addform" style="display: block;">		
+               <table border="1" cellspacing="1" cellpadding="1" id="data-table" class="table table-striped" style="font-weight:bold">
+               <thead>
+            	<tr>
+              	<th><strong>S. No.</strong></th>
+            	<th><strong>Name of State / UT</strong></th>
+	            <th><strong>Total Confirmed cases (Including 76 foreign Nationals) </strong></th>                              
+	            <th><strong>Cured/Discharged/<br>Migrated</strong></th>
+	            <th><strong>Death</strong></th>
+	            </tr>
+               </thead>	
+             <tbody>
+                <tr>
+	            <td>1</td>
+	            <td>Andaman and Nicobar Islands</td>
+	            <td><%= Andaman_and_Nicobar_Islands.confirmed %></td>
+	            <td><%= Andaman_and_Nicobar_Islands.recovered %></td>
+	            <td><%= Andaman_and_Nicobar_Islands.deaths %></td>
+	            </tr>
+	 <tr>
+	<td>2</td>
+	<td>Andhra Pradesh</td>
+	<td><%= Andhra_Pradesh.confirmed %></td>
+	<td><%= Andhra_Pradesh.recovered %></td>
+	<td><%= Andhra_Pradesh.deaths %></td>
+	</tr>
+	
+	
+	<tr>
+	<td>3</td>
+	<td>Arunachal Pradesh</td>
+	<td><%= Arunachal_Pradesh.confirmed %></td>
+	<td><%= Arunachal_Pradesh.recovered %></td>
+	<td><%= Arunachal_Pradesh.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>4</td>
+	<td>Assam</td>
+	<td><%= Assam.confirmed %></td>
+	<td><%= Assam.recovered %></td>
+	<td><%= Assam.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>5</td>
+	<td>Bihar</td>
+	<td><%= Bihar.confirmed %></td>
+	<td><%= Bihar.recovered %></td>
+	<td><%= Bihar.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>6</td>
+	<td>Chandigarh</td>
+	<td><%= Chandigarh.confirmed %></td>
+	<td><%= Chandigarh.recovered %></td>
+	<td><%= Chandigarh.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>7</td>
+	<td>Chhattisgarh</td>
+	<td><%= Chhattisgarh.confirmed %></td>
+	<td><%= Chhattisgarh.recovered %></td>
+	<td><%= Chhattisgarh.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>8</td>
+	<td>Delhi</td>
+	<td><%= Delhi.confirmed %></td>
+	<td><%= Delhi.recovered %></td>
+	<td><%= Delhi.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>9</td>
+	<td>Goa</td>
+	<td><%= Goa.confirmed %></td>
+	<td><%= Goa.recovered %></td>
+	<td><%= Goa.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>10</td>
+	<td>Gujarat</td>
+	<td><%= Gujarat.confirmed %></td>
+	<td><%= Gujarat.recovered %></td>
+	<td><%= Gujarat.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>11</td>
+	<td>Haryana</td>
+	<td><%= Haryana.confirmed %></td>
+	<td><%= Haryana.recovered %></td>
+	<td><%= Haryana.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>12</td>
+	<td>Himachal Pradesh</td>
+	<td><%= Himachal_Pradesh.confirmed %></td>
+	<td><%= Himachal_Pradesh.recovered %></td>
+	<td><%= Himachal_Pradesh.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>13</td>
+	<td>Jammu and Kashmir</td>
+	<td><%= Jammu_and_Kashmir.confirmed %></td>
+	<td><%= Jammu_and_Kashmir.recovered %></td>
+	<td><%= Jammu_and_Kashmir.deaths %></td>
+	</tr>
+	<tr>
+	<td>14</td>
+	<td>Jharkhand</td>
+	<td><%= Jharkhand.confirmed %></td>
+	<td><%= Jharkhand.recovered %></td>
+	<td><%= Jharkhand.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>15</td>
+	<td>Karnataka</td>
+	<td><%= Karnataka.confirmed %></td>
+	<td><%= Karnataka.recovered %></td>
+	<td><%= Karnataka.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>16</td>
+	<td>Kerala</td>
+	<td><%= Kerala.confirmed %></td>
+	<td><%= Kerala.recovered %></td>
+	<td><%= Kerala.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>17</td>
+	<td>Ladakh</td>
+	<td><%= Ladakh.confirmed %></td>
+	<td><%= Ladakh.recovered %></td>
+	<td><%= Ladakh.deaths %></td>
+	</tr>
+
+	<tr>
+	<td>18</td>
+	<td>Madhya Pradesh</td>
+	<td><%= Madhya_Pradesh.confirmed %></td>
+	<td><%= Madhya_Pradesh.recovered %></td>
+	<td><%= Madhya_Pradesh.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>19</td>
+	<td>Maharashtra</td>
+	<td><%= Maharashtra.confirmed %></td>
+	<td><%= Maharashtra.recovered %></td>
+	<td><%= Maharashtra.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>20</td>
+	<td>Manipur</td>
+	<td><%= Mizoram.confirmed %></td>
+	<td><%= Mizoram.recovered %></td>
+	<td><%= Mizoram.deaths %></td>
+	</tr>
+	<tr>
+	<td>21</td>
+	<td>Meghalaya</td>
+	<td><%= Meghalaya.confirmed %></td>
+	<td><%= Meghalaya.recovered %></td>
+	<td><%= Meghalaya.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>22</td>
+	<td>Mizoram</td>
+	<td><%= Mizoram.confirmed %></td>
+	<td><%= Mizoram.recovered %></td>
+	<td><%= Mizoram.deaths %></td>
+	</tr>
+	<tr>
+	<td>23</td>
+	<td>Nagaland#</td>
+	<td><%= Nagaland.confirmed %></td>
+	<td><%= Nagaland.recovered %></td>
+	<td><%= Nagaland.deaths %></td>
+	</tr>
+
+	<tr>
+	<td>24</td>
+	<td>Odisha</td>
+	<td><%= Odisha.confirmed %></td>
+	<td><%= Odisha.recovered %></td>
+	<td><%= Odisha.deaths %></td>
+	</tr>
+
+	<tr>
+	<td>25</td>
+	<td>Puducherry</td>
+	<td><%= Puducherry.confirmed %></td>
+	<td><%= Puducherry.recovered %></td>
+	<td><%= Puducherry.deaths %></td>
+	</tr>
+
+	<tr>
+	<td>26</td>
+	<td>Punjab</td>
+	<td><%= Punjab.confirmed %></td>
+	<td><%= Punjab.recovered %></td>
+	<td><%= Punjab.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>27</td>
+	<td>Rajasthan</td>
+	<td><%= Rajasthan.confirmed %></td>
+	<td><%= Rajasthan.recovered %></td>
+	<td><%= Rajasthan.deaths %></td>
+	</tr>
+
+	<tr>
+	<td>28</td>
+	<td>Tamil Nadu</td>
+	<td><%= Tamil_Nadu.confirmed %></td>
+	<td><%= Tamil_Nadu.recovered %></td>
+	<td><%= Tamil_Nadu.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>29</td>
+	<td>Telengana</td>
+	<td><%= Telangana.confirmed %></td>
+	<td><%= Telangana.recovered %></td>
+	<td><%= Telangana.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>30</td>
+	<td>Tripura</td>
+	<td><%= Tripura.confirmed %></td>
+	<td><%= Tripura.recovered %></td>
+	<td><%= Tripura.deaths %></td>
+	</tr>
+	
+	
+	
+	<tr>
+	<td>31</td>
+	<td>Uttarakhand</td>
+	<td><%= Uttarakhand.confirmed %></td>
+	<td><%= Uttarakhand.recovered %></td>
+	<td><%= Uttarakhand.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td>32</td>
+	<td>Uttar Pradesh</td>
+	<td><%= Uttar_Pradesh.confirmed %></td>
+	<td><%= Uttar_Pradesh.recovered %></td>
+	<td><%= Uttar_Pradesh.deaths %></td>
+	</tr>                    
+	
+	<tr>
+	<td>32</td>
+	<td>West Bengal</td>
+	<td><%= West_Bengal.confirmed %></td>
+	<td><%= West_Bengal.recovered %></td>
+	<td><%= West_Bengal.deaths %></td>
+	</tr>
+	
+	<tr>
+	<td colspan="2"><strong><span>Total number of confirmed cases in India</span></strong></td>
+	<td align="center" style="text-align:center;"><strong><%= total.total_confirmed %>*</strong></td>
+	<td>
+	<strong><%= total.total_recovered %></strong>
+	</td>
+	<td>
+	<strong><%= total.deaths %></strong>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="5"><strong>*States wise distribution is subject to further verification and reconciliation</strong></td>
+	</tr>
+	<tr>
+	<td align="center" style="text-align:center;" colspan="5"><strong>#Nagaland Patient shifted to Assam</strong></td>
+	</tr>
+</tbody>
+</table>
+</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
